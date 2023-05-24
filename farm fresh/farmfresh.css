@@ -1,0 +1,279 @@
+* {
+    margin: none;
+    font-family: sans-serif;
+    text-shadow: .2px .2px .5px black;
+}
+
+body {}
+
+
+/* Code for navigation bar home page*/
+.navborder {
+    background-color: aliceblue;
+    box-shadow: 2px 2px 4px aliceblue;
+    height: 40px;
+    margin: none;
+    padding: none;
+}
+
+.navlist {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navlist a {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    float: right;
+    padding: 10px 15px;
+}
+
+.logolist {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.logolist a {
+    background-color: transparent;
+    text-decoration: none;
+    float: left;
+    padding: 10px 15px;
+    color: black;
+}
+
+.logo {
+    font-size: 1.2em;
+    padding: none;
+}
+
+
+/*Code for first section home page*/
+
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+/*Code for second section home page*/
+
+.secondsection{
+    border-style: solid;
+    height: 470px;
+}
+
+.v1{
+    border-left: 2px solid darkblue;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-top: 7px;
+}
+
+p{
+    text-align: center;
+    display: block;
+    margin-top: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: fantasy;
+    font-style: normal;
+    font-size: 20px;
+    color: mediumvioletred;
+}
+
+.v2{
+    border-left: 2px solid darkblue;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-bottom: 5px;
+}
+
+/* Code for third section home page*/
+
+.thirdsection{
+    border: 2px solid black;
+    height: 500px;
+    margin-top: 5px;
+}
+
+/*Code for fourth section home page*/
+
+.fourthsection{
+    border: 2px solid black;
+    height: 500px;
+    margin-top: 5px;
+}
+
+/*Code for fifth section home page*/
+
+.fifthsection{
+    border: 2px solid black;
+    height: 500px;
+    margin-top: 5px;
+}
+
+/*Code for responsive home page*/
+
+@media screen and (max-width: 500px){
+    .navborder, .firstsection, .secondsection, .thirdsection{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*code for third section image slider home page*/
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+      opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+/*Code for fourth section home page*/
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 15px;
+    
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
